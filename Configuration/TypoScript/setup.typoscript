@@ -1,0 +1,37 @@
+lib.gridelements.defaultGridSetup {
+    # Seperate grid column content with a seperator
+    columns.default.renderObj.stdWrap.innerWrap = |###BREAK###
+
+    cObject =< lib.contentElementWithHeader
+
+    # Add custom fields
+    cObject.fields {
+        # Override CE type
+        type.stdWrap.cObject = TEXT
+        type.stdWrap.cObject.value = structured_content
+
+        content {
+            fields {
+                structure = JSON
+                structure.fields {
+                    layout = TEXT
+                    layout {
+                        field = tx_gridelements_backend_layout
+                    }
+
+                    rows = JSON
+                    rows {
+                        dataProcessing {
+                            10 = ITplusX\HeadlessGridelements\DataProcessing\GridChildrenProcessor
+                            10 {
+                                default {
+                                    as = children
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

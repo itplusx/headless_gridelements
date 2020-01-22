@@ -1,0 +1,46 @@
+{
+  "name": "itplusx/headless-gridelements",
+  "type": "typo3-cms-extension",
+  "description": "Grid Elements json output for EXT:headless",
+  "keywords": [
+    "TYPO3",
+    "TYPO3 CMS",
+    "extension",
+    "gridelements",
+    "headless"
+  ],
+  "authors": [
+    {
+      "name": "Ramón Schlosser",
+      "email": "schlosser@itplusx.de",
+      "role": "Developer",
+      "homepage": "https://itplusx.de"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.2",
+    "typo3/cms-core": "^10.0",
+    "friendsoftypo3/headless": "^2.0",
+    "gridelementsteam/gridelements": "^10.0 || dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ITplusX\\HeadlessGridelements\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ITplusX\\HeadlessGridelements\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "headless_gridelements": "self.version",
+    "itplusx/headless-gridelements": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.0-alpha"
+    }
+  }
+}
