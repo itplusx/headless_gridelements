@@ -13,8 +13,8 @@ Since this extension isn't publicly available at this point you have to add the 
 ```
 
 After that you can install it via:
-```
-composer require itplusx/headless-gridelements
+```shell script
+$ composer require itplusx/headless-gridelements ^1.0@dev
 ```
 
 ## Usage

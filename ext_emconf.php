@@ -3,11 +3,11 @@
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Headless Grid Elements',
     'description' => 'Grid Elements json output for EXT:headless',
-    'category' => 'be',
+    'category' => 'fe',
     'author' => 'Ramón Schlosser',
     'author_email' => 'schlosser@itplusx.de',
     'author_company' => 'ITplusX GmbH',
-    'state' => 'alpha',
+    'state' => 'beta',
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
