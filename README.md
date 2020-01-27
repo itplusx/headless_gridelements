@@ -14,11 +14,23 @@ Since this extension isn't publicly available at this point you have to add the 
 
 After that you can install it via:
 ```shell script
+$ composer require itplusx/headless-gridelements
+```
+
+If you run into `minimum-stability` errors try to explicitly define the version including the stability flag like:
+```shell script
 $ composer require itplusx/headless-gridelements ^1.0@dev
 ```
 
+or add the following settings to your root composer.json:
+
+```json
+"minimum-stability": "dev",
+"prefer-stable": true,
+```
+
 ## Usage
-Just include the TypoScript of this package after the gridelements TypoScript and you are ready to go.
+After a successful install just include the TypoScript of this package after the gridelements TypoScript and you are ready to go.
 
 ## Example json output
 ```json
