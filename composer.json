@@ -17,12 +17,14 @@
       "homepage": "https://itplusx.de"
     }
   ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "license": "MIT",
   "require": {
     "php": ">=7.2",
     "typo3/cms-core": "^10.0",
     "friendsoftypo3/headless": "^2.0",
-    "gridelementsteam/gridelements": "^10.0@dev"
+    "gridelementsteam/gridelements": "^10.0 || dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -40,7 +42,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.0.1-alpha"
+      "dev-master": "1.0.x-dev"
     }
   }
 }
