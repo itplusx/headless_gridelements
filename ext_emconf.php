@@ -14,6 +14,7 @@ $EM_CONF[$_EXTKEY] = array(
     'version' => '1.0.0-alpha',
     'constraints' => [
         'depends' => [
+            'php' => '7.2.0-0.0.0',
             'headless' => '2.0.0-2.99.99',
             'gridelements' => '10.0.0-10.99.99',
         ],

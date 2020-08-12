@@ -1,36 +1,15 @@
 # headless_gridelements
-This extension extends EXT:gridelements (https://gitlab.com/coderscare/gridelements) to be used with EXT:headless (https://github.com/TYPO3-Initiatives/headless/)
-
-NOTE: This is a work in progress!
+This extension extends EXT:gridelements (https://gitlab.com/coderscare/gridelements) to be used with EXT:headless
+(https://github.com/TYPO3-Initiatives/headless/)
 
 ## Installation
-Since this extension isn't publicly available at this point you have to add the following object to the "repositories" array in your `composer.json`:
-```json
-{
-  "type": "vcs",
-  "url": "https://github.com/itplusx/headless_gridelements.git"
-}
-```
-
-After that you can install it via:
 ```shell script
 $ composer require itplusx/headless-gridelements
 ```
 
-If you run into `minimum-stability` errors try to explicitly define the version including the stability flag like:
-```shell script
-$ composer require itplusx/headless-gridelements ^1.0@dev
-```
-
-or add the following settings to your root composer.json:
-
-```json
-"minimum-stability": "dev",
-"prefer-stable": true,
-```
-
 ## Usage
-After a successful install just include the TypoScript of this package after the gridelements TypoScript and you are ready to go.
+After a successful install just include the TypoScript of this package after the gridelements TypoScript and you are
+ready to go.
 
 ## Example json output
 ```json
