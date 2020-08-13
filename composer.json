@@ -9,6 +9,10 @@
     "gridelements",
     "headless"
   ],
+  "homepage": "https://itplusx.de",
+  "support": {
+    "issues": "https://github.com/itplusx/headless_gridelements/issues"
+  },
   "authors": [
     {
       "name": "Ramón Schlosser",
