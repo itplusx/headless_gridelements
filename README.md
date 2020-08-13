@@ -2,8 +2,6 @@
 This extension makes it possible to use [EXT:gridelements](https://gitlab.com/coderscare/gridelements) with
 [EXT:headless](https://github.com/TYPO3-Initiatives/headless/).
 
-It simply 
-
 ## Installation
 ```shell script
 $ composer require itplusx/headless-gridelements
