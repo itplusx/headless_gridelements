@@ -3,9 +3,14 @@ This extension makes it possible to use [EXT:gridelements](https://gitlab.com/co
 [EXT:headless](https://github.com/TYPO3-Initiatives/headless/).
 
 ## Installation
+
+### Installation with [`composer`](https://getcomposer.org/) (recommended)
 ```shell script
 $ composer require itplusx/headless-gridelements
 ```
+
+### Installation with the TYPO3 Extension Manager
+see: [Installation and Upgrade Guide](https://docs.typo3.org/m/typo3/guide-installation/master/en-us/ExtensionInstallation/Index.html#extension-installation)
 
 ## Usage
 After a successful install just include the TypoScript of this package and you are ready to go.
@@ -82,3 +87,28 @@ After a successful install just include the TypoScript of this package and you a
   }
 }
 ```
+
+## Contribution
+Any help on this project is very welcome! May it be as code contribution or just an idea for improvement. But we would
+like to ask you to follow some rules:
+
+- **Issues:**  
+  When adding issues please always describe the bug/feature/task as detailed as possible. Only providing a title is not
+  enough. Please use issue templates.
+- **Commits:**  
+  Our team is following the [Conventional Commits](https://www.conventionalcommits.org/). We would like ask you stick to
+  these rules whenever you want to contribute.
+- **Pull Requests:**  
+  Before you submit a PR please create an issue first and link it to the pull request or at least add a PR description 
+  with detailed information about what this PR does. Otherwise we are not able to decide if this PR is worth going into
+  master.
+
+---
+
+<p align="center">
+  <a href="https://itplusx.de" target="_blank" rel="noopener noreferrer">
+    <img width="350" src="https://itplusx.de/banners/created-by-X-with-passion.svg" alt="ITplusX - Internetagentur & Systemhaus">
+  </a>
+</p>
+
+---
