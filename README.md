@@ -8,8 +8,7 @@ $ composer require itplusx/headless-gridelements
 ```
 
 ## Usage
-After a successful install just include the TypoScript of this package after the gridelements TypoScript and you are
-ready to go.
+After a successful install just include the TypoScript of this package and you are ready to go.
 
 ## Example json output
 ```json
