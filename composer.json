@@ -1,7 +1,7 @@
 {
   "name": "itplusx/headless-gridelements",
   "type": "typo3-cms-extension",
-  "description": "Grid Elements json output for EXT:headless",
+  "description": "Grid Elements json output for headless extension",
   "keywords": [
     "TYPO3",
     "TYPO3 CMS",
