@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Headless Grid Elements',
     'description' => 'Grid Elements json output for EXT:headless',
     'category' => 'fe',
@@ -30,4 +30,4 @@ $EM_CONF[$_EXTKEY] = array(
             'ITplusX\\HeadlessGridelements\\Tests\\' => 'Tests'
         ]
     ],
-);
+];
