@@ -1,13 +1,13 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF[$_EXTKEY] = array(
     'title' => 'Headless Grid Elements',
-    'description' => 'Grid Elements json output for headless extension',
+    'description' => 'Grid Elements json output for EXT:headless',
     'category' => 'fe',
     'author' => 'Ramon Schlosser',
     'author_email' => 'schlosser@itplusx.de',
     'author_company' => 'ITplusX GmbH',
-    'state' => 'stable',
+    'state' => 'beta',
     'clearCacheOnLoad' => 0,
     'version' => '1.0.4-dev',
     'constraints' => [
@@ -29,4 +29,4 @@ $EM_CONF[$_EXTKEY] = [
             'ITplusX\\HeadlessGridelements\\Tests\\' => 'Tests'
         ]
     ],
-];
+);
