@@ -15,6 +15,10 @@ see: [Installation and Upgrade Guide](https://docs.typo3.org/m/typo3/guide-insta
 ## Usage
 After a successful install just include the TypoScript of this package and you are ready to go.
 
+**NOTE:  
+Including the original Gridelements TypoScript might break the JSON output. Therefore it is not recommended to do so. 
+The TypoScript of `headless_gridelements` is enough.**
+
 ## Example json output
 ```json
 {
