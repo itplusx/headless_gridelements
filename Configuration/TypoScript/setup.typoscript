@@ -1,12 +1,8 @@
-lib.gridelements.defaultGridSetup {
-    # Seperate grid column content with a seperator
-    columns.default.renderObj.stdWrap.innerWrap = |###BREAK###
-
-    cObject =< lib.contentElementWithHeader
-
-    # Add custom fields
-    cObject.fields {
-        # Override CE type
+tt_content.gridelements_pi1 >
+tt_content.gridelements_pi1 =< lib.contentElementWithHeader
+tt_content.gridelements_pi1 {
+    fields {
+        # Override CE type display
         type.stdWrap.cObject = TEXT
         type.stdWrap.cObject.value = structured_content
 
@@ -34,8 +30,4 @@ lib.gridelements.defaultGridSetup {
             }
         }
     }
-}
-
-tt_content.gridelements_pi1.20.10.setup {
-    default < lib.gridelements.defaultGridSetup
 }
