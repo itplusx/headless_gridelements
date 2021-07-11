@@ -28,6 +28,9 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
             foreach ($this->processedData['data']['tx_gridelements_backend_layout_resolved']['config']['rows.'] as $rowNumber => $row) {
                 $columns = [];
                 foreach ($row['columns.'] as $column) {
+                    if ($column['name']) {
+                        $column['name'] = $GLOBALS['LANG']->sL($column['name']);
+                    }
                     $columns[] = [
                         'config' => $column,
                         'elements' => is_array($processedColumns[$column['colPos']]) === true ? $this->processRecords($processedColumns[$column['colPos']]) : []
