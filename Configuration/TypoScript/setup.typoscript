@@ -31,3 +31,17 @@ tt_content.gridelements_pi1 {
         }
     }
 }
+
+# More advanced sorting of elements within CType 'menu_section' so
+# gridelement children are being put right after their parents:
+tt_content.menu_section.fields.content.fields.menu.dataProcessing.10.dataProcessing.20 {
+    where = tt_content.sectionIndex = 1
+    selectFields (
+        tt_content.uid, tt_content.header,
+        ((IFNULL(container.sorting, tt_content.sorting) * 100000000) +
+         (tt_content.tx_gridelements_columns * 10000) +
+         tt_content.sorting) as customSorting
+    )
+    leftjoin = tt_content AS container ON container.uid = tt_content.tx_gridelements_container
+    orderBy = customSorting
+}
