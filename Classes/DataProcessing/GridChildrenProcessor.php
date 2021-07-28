@@ -29,7 +29,7 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
                 $columns = [];
                 foreach ($row['columns.'] as $column) {
                     if ($column['name']) {
-                        $column['name'] = $GLOBALS['LANG']->sL($column['name']);
+                        $column['name'] = $GLOBALS['TSFE'] ? $GLOBALS['TSFE']->sL($column['name']) : $column['name'];
                     }
                     $columns[] = [
                         'config' => $column,
