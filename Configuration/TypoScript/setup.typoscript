@@ -32,8 +32,9 @@ tt_content.gridelements_pi1 {
     }
 }
 
-# More advanced sorting of elements within CType 'menu_section' so
-# gridelement children are being put right after their parents:
+# More advanced sorting of elements within CType 'menu_section' so gridelement children are
+# being put right after their parents.
+# Inspired by http://blog.sitegefuehl.de/typo3-inhaltsverzeichnis-section-index-gridelements/
 tt_content.menu_section.fields.content.fields.menu.dataProcessing.10.dataProcessing.20 {
     where = tt_content.sectionIndex = 1
     selectFields (
