@@ -8,7 +8,6 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'schlosser@itplusx.de',
     'author_company' => 'ITplusX GmbH',
     'state' => 'stable',
-    'clearCacheOnLoad' => 0,
     'version' => '4.0.0-dev',
     'constraints' => [
         'depends' => [
