@@ -12,9 +12,9 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'php' => '7.2.0-0.0.0',
-            'typo3' => '10.0.0-11.5.99',
-            'headless' => '2.0.0-3.99.99',
-            'gridelements' => '10.0.0-11.99.99',
+            'typo3' => '11.5.0-11.5.99',
+            'headless' => '3.0.0-3.99.99',
+            'gridelements' => '',
         ],
         'conflicts' => [],
         'suggests' => [],
