@@ -39,8 +39,7 @@
     }
   },
   "replace": {
-    "typo3-ter/headless_gridelements": "self.version",
-    "itplusx/headless-gridelements": "self.version"
+    "typo3-ter/headless_gridelements": "self.version"
   },
   "extra": {
     "branch-alias": {
