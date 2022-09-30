@@ -1,5 +1,5 @@
 # headless_gridelements
-This extension makes it possible to use [EXT:gridelements](https://gitlab.com/coderscare/gridelements) with
+This extension makes it possible to use [EXT:gridelements](https://github.com/CodersCare/gridelements) with
 [EXT:headless](https://github.com/TYPO3-Initiatives/headless/).
 
 ## Installation
