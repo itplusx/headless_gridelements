@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "require": {
-    "php": ">=7.2",
+    "php": "^7.4 || ^8.0",
     "typo3/cms-core": "^11.5",
     "friendsoftypo3/headless": "^3.0",
     "gridelementsteam/gridelements": "dev-master as 11.0"
