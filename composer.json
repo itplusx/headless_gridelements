@@ -11,6 +11,7 @@
   ],
   "homepage": "https://itplusx.de",
   "support": {
+    "email": "typo3@itplusx.de",
     "issues": "https://github.com/itplusx/headless_gridelements/issues"
   },
   "authors": [
