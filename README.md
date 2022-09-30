@@ -113,7 +113,7 @@ like to ask you to follow some rules:
 - **Pull Requests:**  
   Before you submit a PR please create an issue first and link it to the pull request or at least add a PR description 
   with detailed information about what this PR does. Otherwise we are not able to decide if this PR is worth going into
-  master.
+  the main branch.
 
 ---
 
