@@ -12,7 +12,7 @@ $ composer require itplusx/headless-gridelements
 ### Installation with the TYPO3 Extension Manager
 see: [Installation and Upgrade Guide](https://docs.typo3.org/m/typo3/guide-installation/10.4/en-us/ExtensionInstallation/Index.html#install-an-extension-without-composer)
 
-### Requirements and compatibility
+## Requirements and compatibility
 | Requirement                                                | Version       |
 |------------------------------------------------------------|---------------|
 | PHP                                                        | 7.2, 7.3, 7.4 |
