@@ -13,7 +13,7 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
     /**
      * @return array
      */
-    protected function sortRecordsIntoMatrix()
+    protected function sortRecordsIntoMatrix(): array
     {
         $processedColumns = [];
         foreach ($this->processedRecordVariables as $key => $processedRecord) {
