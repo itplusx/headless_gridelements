@@ -31,9 +31,10 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
                     if ($column['name']) {
                         $column['name'] = $GLOBALS['TSFE'] ? $GLOBALS['TSFE']->sL($column['name']) : $column['name'];
                     }
+                    $hasElements = isset($processedColumns[$column['colPos']]) && is_array($processedColumns[$column['colPos']]);
                     $columns[] = [
                         'config' => $column,
-                        'elements' => is_array($processedColumns[$column['colPos']]) === true ? $this->processRecords($processedColumns[$column['colPos']]) : []
+                        'elements' => $hasElements ? $this->processRecords($processedColumns[$column['colPos']]) : [],
                     ];
                 }
 
