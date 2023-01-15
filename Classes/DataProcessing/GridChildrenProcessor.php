@@ -50,7 +50,8 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
      * @param array $records The array of records to process
      * @return array The processed records as JSON
      */
-    private function processRecords(array $records): array {
+    private function processRecords(array $records): array
+    {
         $processedRecords = [];
 
         foreach ($records as $record) {
@@ -66,7 +67,8 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
      * @param array $data The record data
      * @return string The JSON string of the rendered record
      */
-    private function renderRecord(array $data): string {
+    private function renderRecord(array $data): string
+    {
         $recordContentObjectRenderer = GeneralUtility::makeInstance(ContentObjectRenderer::class);
         $recordContentObjectRenderer->start($data, 'tt_content');
 
