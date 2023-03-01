@@ -13,7 +13,7 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
     /**
      * @return array
      */
-    protected function sortRecordsIntoMatrix()
+    protected function sortRecordsIntoMatrix(): array
     {
         $processedColumns = [];
         foreach ($this->processedRecordVariables as $key => $processedRecord) {
@@ -31,9 +31,10 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
                     if ($column['name']) {
                         $column['name'] = $GLOBALS['TSFE'] ? $GLOBALS['TSFE']->sL($column['name']) : $column['name'];
                     }
+                    $hasElements = !empty($processedColumns[$column['colPos']]) && is_array($processedColumns[$column['colPos']]);
                     $columns[] = [
                         'config' => $column,
-                        'elements' => is_array($processedColumns[$column['colPos']]) === true ? $this->processRecords($processedColumns[$column['colPos']]) : []
+                        'elements' => $hasElements ? $this->processRecords($processedColumns[$column['colPos']]) : [],
                     ];
                 }
 
@@ -50,7 +51,8 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
      * @param array $records The array of records to process
      * @return array The processed records as JSON
      */
-    private function processRecords(array $records): array {
+    private function processRecords(array $records): array
+    {
         $processedRecords = [];
 
         foreach ($records as $record) {
@@ -66,7 +68,8 @@ class GridChildrenProcessor extends \GridElementsTeam\Gridelements\DataProcessin
      * @param array $data The record data
      * @return string The JSON string of the rendered record
      */
-    private function renderRecord(array $data): string {
+    private function renderRecord(array $data): string
+    {
         $recordContentObjectRenderer = GeneralUtility::makeInstance(ContentObjectRenderer::class);
         $recordContentObjectRenderer->start($data, 'tt_content');
 
