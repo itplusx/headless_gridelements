@@ -8,13 +8,13 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'schlosser@itplusx.de',
     'author_company' => 'ITplusX GmbH',
     'state' => 'stable',
-    'version' => '3.0.0-dev',
+    'version' => '3.0.0',
     'constraints' => [
         'depends' => [
-            'php' => '7.2.0-0.0.0',
+            'php' => '7.2.0-8.2.99',
             'typo3' => '11.5.0-11.5.99',
             'headless' => '3.0.0-3.99.99',
-            'gridelements' => '11.0.0-dev',
+            'gridelements' => '11.0.0-11.99.99',
         ],
         'conflicts' => [],
         'suggests' => [],
