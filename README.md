@@ -15,10 +15,10 @@ see: [Extension Management](https://docs.typo3.org/m/typo3/reference-coreapi/11.
 ## Requirements and compatibility
 | Requirement                                                | Version  |
 |------------------------------------------------------------|----------|
-| PHP                                                        | 7.4, 8.0 |
-| TYPO3                                                      | 11.5     |
-| [Headless](https://github.com/TYPO3-Headless/headless)     | 3        |
-| [Gridelements](https://github.com/CodersCare/gridelements) | 11       |
+| PHP                                                        | >= 8.2   |
+| TYPO3                                                      | 12.4     |
+| [Headless](https://github.com/TYPO3-Headless/headless)     | 4        |
+| [Gridelements](https://github.com/CodersCare/gridelements) | 12       |
 
 ## Usage
 After a successful install just include the TypoScript of this package and you are ready to go.
