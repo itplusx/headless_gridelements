@@ -46,3 +46,6 @@ tt_content.menu_section.fields.content.fields.menu.dataProcessing.10.dataProcess
     leftjoin = tt_content AS container ON container.uid = tt_content.tx_gridelements_container
     orderBy = customSorting
 }
+
+# Hide gridelement children on root
+lib.content.select.where = ({#colPos} >= 0)
